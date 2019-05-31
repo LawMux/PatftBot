@@ -7,4 +7,4 @@ Some tools almost fulfill this need.  For example, Google patents allows you to 
 
 A good place to start is by reviewing the [PATFTBOT_Instructions_Demo_Walkthrough.pdf](PATFTBOT_Instructions_Demo_Walkthrough.pdf).
 
-IMPORTANT: PATFTBOT v1.0 was written under very significant time constraints (May 2019).  Accordingly, one should expect significant bug fixes and feature updates as it evolves, before being a streamlined, production-grade tool.
+IMPORTANT: PATFTBOT v1.0 was written under very significant time constraints (May 2019).  Accordingly, one should expect significant bug fixes and feature updates as it evolves before becoming a streamlined, production-grade tool.
