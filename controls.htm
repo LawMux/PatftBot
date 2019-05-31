@@ -1,0 +1,107 @@
+<html style="height:100%">
+
+  <head>
+    <script src="js/jquery.js"></script>
+    <script src="js/controls.js"></script>
+
+    <style>
+
+      .table_row{
+      border-bottom: 2px solid #e0e0e0;
+      border-collapse: collapse;
+      padding-top: 5px;
+      display:flex;
+      flex-direction:row
+
+      }
+
+      .table_cell{
+      flex-wrap: wrap;   
+      border-right:1px solid #ddd
+      }
+
+      .session_item, .session_item_sel{
+      display:flex;
+      flex:0 0 20px;
+      margin-top:5px;
+      border:1px solid black;
+      background-color:#ddd;
+      }
+
+      .session_item:hover{
+      background-color:#eee;
+      cursor:pointer
+      }
+      
+      .session_item_sel{
+      background-color:#9cf;
+      display:flex;
+      flex-direction:row
+      }
+
+
+      
+    </style>
+    
+  </head>
+
+  <body style="height:100%; padding:5px; margin:0px; box-sizing:border-box">
+
+    <div style="width:100%; height:100%; background-color:white; display:flex; flex-direction:column; box-sizing:border-box; padding:0px; font-size:10px;">
+
+      <div id="main_container" style="border-radius:5px; box-sizing:border-box; border:1px solid black; display:block; flex-shrink:0; flex:1; background-color:#ddd; padding:5px; display:flex;  flex-direction:column">
+	
+	<div style="flex: 0 0 20px; display:flex; flex-direction:row; ">
+	  Selected item:  <span id="session_name_frame"></span> <span id="check_box_holder" style="flex:1;text-align:center"></span> <span id="username_frame" style="flex:1;text-align:right"></span>
+	</div>
+	
+	<div style="flex: 1; display:flex; flex-direction:row; ">
+
+	  <!-- list -->
+	  <div id="con_file_load" style="flex:0 0 250px; border:1px solid black; border:1px solid black; box-sizing:border-box; margin-right:5px; display:flexflex-direction:column">
+	    <div>Sessions</div>
+	    <div id="session_controls" style="display:flex; flex-direction:row"> </div>
+	    <div id="ele_file_list" style="flex:1; overflow-y:scroll; height:100px; display:flex;  flex-direction:column; background-color:white; box-sizing:border-box; padding:5px; padding-top:0px"></div>
+	    <div><input type="button" id="load_button" value="LOAD" style="width:100%"></input>
+	      <input id="file-input" type="file" name="name" style="display: none;" />
+	    </div>
+	    
+	  </div>
+
+	  <!-- session -->
+	  <div id="con_session"style="flex:1; border:1px solid black; border:1px solid black; box-sizing:border-box">
+	    Session Assets<br>
+
+	    <div id="table_header" class="table_row" style="background-color:#ccc">
+	    </div>
+	    <div id="ele_sess_list" style="flex:1; overflow-y:scroll; height:100px; display:flex;flex-direction:column; background-color:white">
+
+	      
+	      
+	      
+	    </div>
+
+	  </div>
+
+	<!-- commenters -->
+	<div id="con_commenters" style="flex:.25; margin-left:5px; border:1px solid black; border:1px solid black; box-sizing:border-box; display:none">
+
+	  Commenters<br>
+	  <div id="ele_commenters_list" style="flex:1; overflow-y:scroll; height:100px; background-color:white">a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>file list</div>
+	  list<br>
+	  
+	</div>
+      </div>
+	  
+	</div>
+
+
+
+    </div>
+
+</div>
+<a id="downloadAnchorElem" style="display:none"></a>
+
+</body>
+
+</html> 

@@ -1,0 +1,39 @@
+{
+    "description": "Extension for collaborative PATFT review.  See https://github.com/LawMux/PatftBot",
+    "manifest_version": 2,
+    "name": "PATFTBOT",
+    "version": "1.0",
+    "homepage_url": "https://github.com/LawMux/PatftBot",
+    "icons": {
+        "48": "icons/patftbot-48.png"
+    },
+    "applications": {
+        "gecko": {
+            "id": "lawmux@jstechlaw.com",
+            "strict_min_version": "45.0"
+        }
+    },
+    "permissions": [
+        "<all_urls>",
+        "file:///*",
+        "activeTab",
+        "storage",
+        "tabs",
+        "webRequest",
+        "webNavigation"
+    ],
+    "browser_action": {
+        "default_icon": "icons/patftbot-32.png",
+        "default_title": "SPECBOT"
+    },
+    "content_scripts": [
+	{
+	    "matches": ["*://patft.uspto.gov/*", "*://appft.uspto.gov/*"],
+	    "js": ["js/jquery.js","js/uspto.js"],
+	    "css": ["css/uspto.css"]
+	}
+    ],
+    "background": {
+        "scripts": ["index.js"]
+    }
+}
