@@ -9,4 +9,4 @@ A good place to start is by reviewing the [PATFTBOT_Instructions_Demo_Walkthroug
 
 IMPORTANT: PATFTBOT v1.0 was written under very significant time constraints (May 2019).  Accordingly, one should expect significant bug fixes and feature updates as it evolves before becoming a streamlined, production-grade tool.
 
-IMPORANT:  Also note that the license is AGPL since, like PATFT itself, improvements should be publicly available.
+IMPORTANT:  Also note that the license is AGPL since, like PATFT itself, improvements should be publicly available.
